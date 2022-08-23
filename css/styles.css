@@ -1,0 +1,24 @@
+:root {
+  --white: hsl(0, 0%, 100%);
+  --black: hsl(0, 0%, 0%);
+  --dark-gray: hsl(0, 0%, 55%);
+  --very-dark-gray: hsl(0, 0%, 41%);
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  /*
+   font-family: 'Alata', sans-serif;
+   font-family: 'Josefin Sans', sans-serif;
+   font-family: 'Open Sans', sans-serif;
+  */
+}
+
+
+
+/* --- Attribution --- */
+ .attribution { font-size: 11px; text-align: center; }
+ .attribution a { color: hsl(228, 45%, 44%); }
