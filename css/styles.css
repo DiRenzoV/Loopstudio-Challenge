@@ -1,3 +1,11 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 :root {
   --white: hsl(0, 0%, 100%);
   --black: hsl(0, 0%, 0%);
@@ -9,6 +17,10 @@ html {
   font-size: 62.5%;
 }
 
+img {
+  width: 100%;
+}
+
 body {
   /*
    font-family: 'Alata', sans-serif;
@@ -16,8 +28,123 @@ body {
    font-family: 'Open Sans', sans-serif;
   */
 }
+/* --- Typography --- */
 
+a {
+  text-decoration: none;
+}
 
+.header,
+.nav-list {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.header {
+  font-size: 4rem;
+  color: var(--white);
+  text-shadow: 0px 0px 10px var(--black);
+  margin: 0;
+}
+
+.nav-list a {
+  color: var(--dark-gray);
+}
+
+.nav-list a:hover {
+  color: var(--white);
+}
+
+/* --- Hero --- */
+.hero {
+  background-image: url(/images/mobile/image-hero.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 5rem 3rem;
+  height: 650px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+/* --- Nav --- */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  width: 15rem;
+  position: absolute;
+  top: 5rem;
+  left: 3rem; 
+}
+
+.menu {
+  display: none;
+}
+
+.menu.open {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--black);
+  padding: 5rem 3rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1;
+}
+
+.hamburger {
+  background-image: url(/images/icon-hamburger.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;  
+  position: absolute;
+  top: 5rem;
+  right: 3rem;
+}
+
+.hamburger.active {
+  background-image: url(/images/icon-close.svg);
+  z-index: 1;
+}
+/* --- Lists --- */
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.list__item {
+  font-size: 3rem;
+}
+
+.header-container {
+  border: 3px solid var(--white);
+  padding: 2rem;
+  transform: translateY(-20rem);
+}
+
+.nav-list {
+  transform: translateY(15rem);
+}
+
+.nav-list .list__item {
+  color: white;
+  margin: .7rem 0;
+  text-transform: uppercase;
+}
 
 /* --- Attribution --- */
  .attribution { font-size: 11px; text-align: center; }
