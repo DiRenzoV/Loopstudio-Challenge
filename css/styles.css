@@ -330,6 +330,8 @@ footer .list__item a {
     bottom: -5px;
     left: 0;
     right: 0;
+    width: 60%;
+    margin: auto;
     height: 3px;
     background-color: var(--white);
     transform: scaleX(0);
